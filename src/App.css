@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+#review-section {
+  .review-form {
+    .btn-primary {
+      border-radius: 7px;
+      width: 100%; /* Make the button full-width by default */
+      height: 3rem;
+      margin: 1rem 0;
+      background-color: #8780f8;
+      color: white;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    /* Media query for screens wider than 768px (desktop) *//* Adjust the margin for spacing */
+    .review-form {
+      .btn-primary {
+        width: 12rem; /* Set a fixed width for desktop */
+        margin: 0 37rem; /* Adjust the margin for desktop */
+      }
+    }
+  }
+}
+input, textarea, select {
+  padding: 5px 10px;
+  background-color: #262538;
+  border: 1px solid #49485d;
+  border-radius: 5px;
+  color: #8c8aa7;
+}
+

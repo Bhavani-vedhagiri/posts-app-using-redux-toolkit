@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { postAdded, addNewPost } from "../reducers/posts/postsSlice";
+import { addNewPost } from "../reducers/posts/postsSlice";
+// import { postAdded, addNewPost } from "../reducers/posts/postsSlice";
 import { selectAllUser } from "../reducers/posts/userSlice";
 import lodash from "lodash";
 // import { nanoid } from "@reduxjs/toolkit";

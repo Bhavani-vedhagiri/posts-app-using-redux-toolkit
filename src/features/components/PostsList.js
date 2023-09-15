@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   selectAllPost,
   getPostsStatus,
-  getPostsError,
+  // getPostsError,
   fetchPosts,
 } from "../reducers/posts/postsSlice";
 import PostExcerpt from "./PostExcerpt";
@@ -13,7 +13,7 @@ import PostExcerpt from "./PostExcerpt";
 function PostsList() {
   const post = useSelector(selectAllPost);
   const postStatus = useSelector(getPostsStatus);
-  const postError = useSelector(getPostsError);
+  // const postError = useSelector(getPostsError);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function PostsList() {
       dispatch(fetchPosts());
       // dispatch(fetchedUsers())
     }
-  }, []);
+  }, [dispatch,postStatus]);
 
   let content;
   const sortPost = post
